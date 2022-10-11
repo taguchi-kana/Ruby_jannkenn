@@ -61,12 +61,12 @@ while battle_me.index(battle_case) < 3
          next
      elsif (battle_me.index(battle_case) ==0 && battle_you.index(opponent)==1)||(battle_me.index(battle_case) ==1 && battle_you.index(opponent)==2)||(battle_me.index(battle_case) ==2 && battle_you.index(opponent)==0)
          winner
+         break
      else
          loser
+         break
      end
-    puts "じゃんけん・・・・・"
-    puts "0(グー)  1(チョキ)  2(パー)  3(戦わない)"
-    battle_case =battle_me[gets.to_i]
+  puts "#{battle_case}"
 end
 
-puts "#{battle_case}"
+puts "お疲れ様でした"
